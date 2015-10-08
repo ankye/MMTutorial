@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'MMTutorial_Example', :exclusive => true do
+  pod "MMTutorial", :path => "../"
+end
+
+target 'MMTutorial_Tests', :exclusive => true do
+  pod "MMTutorial", :path => "../"
+
+  
+end
