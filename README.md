@@ -4,9 +4,10 @@
 [![Version](https://img.shields.io/cocoapods/v/MMTutorial.svg?style=flat)](http://cocoapods.org/pods/MMTutorial)
 [![License](https://img.shields.io/cocoapods/l/MMTutorial.svg?style=flat)](http://cocoapods.org/pods/MMTutorial)
 [![Platform](https://img.shields.io/cocoapods/p/MMTutorial.svg?style=flat)](http://cocoapods.org/pods/MMTutorial)
-https://raw.githubusercontent.com/ankye/MMTutorial/master/snapshot/snapshot3.png
-https://raw.githubusercontent.com/ankye/MMTutorial/master/snapshot/snapshot2.png
-https://raw.githubusercontent.com/ankye/MMTutorial/master/snapshot/snapshot1.png
+
+![image](https://raw.githubusercontent.com/ankye/MMTutorial/master/snapshot/snapshot3.png)
+![image](https://raw.githubusercontent.com/ankye/MMTutorial/master/snapshot/snapshot2.png)
+![image](https://raw.githubusercontent.com/ankye/MMTutorial/master/snapshot/snapshot1.png)
 
 ## Usage
 
