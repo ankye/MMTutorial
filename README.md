@@ -5,9 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/MMTutorial.svg?style=flat)](http://cocoapods.org/pods/MMTutorial)
 [![Platform](https://img.shields.io/cocoapods/p/MMTutorial.svg?style=flat)](http://cocoapods.org/pods/MMTutorial)
 
-![image](https://raw.githubusercontent.com/ankye/MMTutorial/master/snapshot/snapshot3.png =320x485)
-![image](https://raw.githubusercontent.com/ankye/MMTutorial/master/snapshot/snapshot2.png =320x485)
-![image](https://raw.githubusercontent.com/ankye/MMTutorial/master/snapshot/snapshot1.png =320x485)
+![image](https://raw.githubusercontent.com/ankye/MMTutorial/master/snapshot/snapshot.gif)
+
 
 ## Usage
 
