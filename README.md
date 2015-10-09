@@ -5,6 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/MMTutorial.svg?style=flat)](http://cocoapods.org/pods/MMTutorial)
 [![Platform](https://img.shields.io/cocoapods/p/MMTutorial.svg?style=flat)](http://cocoapods.org/pods/MMTutorial)
 
+![image](https://raw.githubusercontent.com/ankye/MMTutorial/master/snapshot/snapshot.gif)
+
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
