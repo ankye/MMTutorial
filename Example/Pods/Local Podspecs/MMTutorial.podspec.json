@@ -1,0 +1,30 @@
+{
+  "name": "MMTutorial",
+  "version": "0.1.0",
+  "summary": "A short description of MMTutorial.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/MMTutorial",
+  "license": "MIT",
+  "authors": {
+    "ankye": "shengxiehua@me.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/MMTutorial.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "MMTutorial": [
+      "Pod/Assets/*.png"
+    ]
+  },
+  "dependencies": {
+    "RTLabel": [
+      "~> 1.0.1"
+    ]
+  }
+}

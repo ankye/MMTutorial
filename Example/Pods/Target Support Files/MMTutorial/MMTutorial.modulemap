@@ -1,0 +1,6 @@
+framework module MMTutorial {
+  umbrella header "MMTutorial-umbrella.h"
+
+  export *
+  module * { export * }
+}

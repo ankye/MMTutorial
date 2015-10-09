@@ -8,11 +8,47 @@
 
 #import "MMAppDelegate.h"
 
+#import "MMTutorialViewController.h"
+#import "MMPageFactory.h"
+
+#import "MMViewController.h"
+#import "MMStyle.h"
+
 @implementation MMAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    NSLog(@"HEIGHT is %f",SCREEN_HEIGHT);
+    
+    NSString* string = @"<b>bold</b>,<i>italic</i> and <u>underlined</u> text, and <font face='HelveticaNeue-CondensedBold' size=20 color='#CCFF00'>text with custom font and color</font>";
+    
+    MMTutorialPage* layer1 = [MMPageFactory createPageWithType:TYPE_IMAGE_IMGTITLE withBg:@"tutorial_image1" withfixBg4s:@"tutorial_image1_4s" withTitle:@"tutorial_title1" withDesc:string];
+    MMTutorialPage* layer2 = [MMPageFactory createPageWithType:TYPE_IMAGE_TEXTTITLE withBg:@"tutorial_image2" withfixBg4s:@"tutorial_image2_4s" withTitle:@"tutorial_title2" withDesc:string];
+    MMTutorialPage* layer3 = [MMPageFactory createPageWithType:TYPE_IMAGE withBg:@"tutorial_image3" withfixBg4s:@"tutorial_image3_4s" withTitle:@"tutorial_title3" withDesc:string];
+    
+    
+    NSArray* _tutorialLayers = [[NSMutableArray alloc] initWithArray:@[layer1,layer2,layer3]];
+    
+    //
+    [MMStyle sharedStyle].pageIndicatorTintColor = [UIColor whiteColor];
+    [MMStyle sharedStyle].currentPageIndicatorTintColor = [UIColor greenColor];
+    
+    
+    MMTutorialViewController* viewController = [[MMTutorialViewController alloc] initWithPages:_tutorialLayers];
+    
+ 
+    self.window.rootViewController = viewController;
+    
+    [viewController updateSingleButtonName:@"进入应用"];
+    
+    [viewController startScrolling];
+    
+    viewController.didSelectedEnters[0] = ^() {
+            self.window.rootViewController = [[MMViewController alloc] init];
+    };
+    
+
     return YES;
 }
 

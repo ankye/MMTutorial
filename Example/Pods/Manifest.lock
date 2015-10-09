@@ -1,0 +1,17 @@
+PODS:
+  - MMTutorial (0.1.0):
+    - RTLabel (~> 1.0.1)
+  - RTLabel (1.0.1)
+
+DEPENDENCIES:
+  - MMTutorial (from `../`)
+
+EXTERNAL SOURCES:
+  MMTutorial:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MMTutorial: 93898026e9cc2360fb983ec53f554c47dce9fd33
+  RTLabel: 6005d07fef57b101097c4271f804daae3110cbca
+
+COCOAPODS: 0.38.2
