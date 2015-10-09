@@ -59,6 +59,7 @@
         self.didSelectedEnters = [[NSMutableArray alloc] initWithCapacity:self.buttons.count];
         
         [self.buttons enumerateObjectsUsingBlock:^(UIButton *btn, NSUInteger idx, BOOL *stop) {
+           
             btn.tag = idx;
             [btn addTarget:self action:@selector(enter:) forControlEvents:UIControlEventTouchUpInside];
             btn.frame = [self frameOfEnterButton:idx];
@@ -126,7 +127,7 @@
     return CGRectMake(0, self.view.bounds.size.height - 40, self.view.bounds.size.width, 40);
 }
 
-- (CGRect) frameOfEnterButton:(int)index
+- (CGRect) frameOfEnterButton:(NSUInteger)index
 {
     UIButton* btn = self.buttons[0];
     
@@ -134,21 +135,21 @@
     if (CGSizeEqualToSize(size, CGSizeZero)) {
         size = CGSizeMake(self.view.frame.size.width * 0.6/self.buttons.count, 39);
     }
-    int x = [self getButtonOffsetX:index width:size.width total:self.buttons.count padding:20];
+    NSUInteger x = [self getButtonOffsetX:index width:size.width total:self.buttons.count padding:20];
     
     return CGRectMake(x, self.pageControl.frame.origin.y - size.height - (SCREEN_HEIGHT==IPHONE_4S_HEIGHT?30:60), size.width, size.height);
 }
 
--(int)getButtonOffsetX:(int)index width:(int)width total:(int)total padding:(int)padding
+-(NSUInteger)getButtonOffsetX:(NSUInteger)index width:(int)width total:(NSUInteger)total padding:(int)padding
 {
     CGSize size = self.view.frame.size;
-    int center = size.width/2 ;
+    NSUInteger center = size.width/2 ;
     
-    int startx = center - (total*width)/2.0 - ((total-1)*padding)/2.0;
+    NSUInteger startx = center - (total*width)/2.0 - ((total-1)*padding)/2.0;
     
-    int x = startx;
+    NSUInteger x = startx;
     
-    return x = x + (padding + width)* index;
+    return x + (padding + width)* index;
    
 }
 
@@ -241,7 +242,7 @@
 
 #pragma mark - Action
 - (void)enter:(id)object{
-    int index = 0;
+    NSUInteger index = 0;
     if(object){
         index = [(UIButton*)object tag];
     }
